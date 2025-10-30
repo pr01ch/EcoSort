@@ -52,4 +52,14 @@ EcoSort AI is a smart e-waste management web application that helps users report
 
 ---
 
+## 🚧 Project Status
+
+EcoSort AI is currently under active development.  
+I’m continuously improving the AI model, integrating Gemini API for enhanced e-waste classification,  
+and refining the chatbot experience.  
+
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+
+--
+
 © 2025 Pragya Chauhan
