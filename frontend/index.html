@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Waste Management Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌱 E-Waste Management Assistant</h1>
+      <p class="subtitle">Identify, Recycle, Protect Our Planet</p>
+    </header>
+
+    <main class="main-content">
+      <section class="section card">
+        <h2>📸 Image Classification</h2>
+        <p class="section-description">
+          Upload a photo of your e-waste to get disposal tips
+        </p>
+
+        <div class="upload-area" id="uploadArea">
+          <div class="upload-content">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <p class="upload-text">Click to upload or drag and drop</p>
+            <p class="upload-hint">Supports PNG, JPG, WEBP (max 16MB)</p>
+          </div>
+          <input type="file" id="imageInput" accept="image/*" style="display:none;" />
+        </div>
+
+        <div id="previewContainer" class="preview-container" style="display:none;">
+          <img id="previewImage" src="" alt="Preview" />
+          <button class="btn btn-secondary" id="removeImage">Remove Image</button>
+        </div>
+
+        <button class="btn btn-primary" id="classifyBtn" style="display:none;">
+          <span class="btn-text">Identify E-Waste</span>
+          <span class="btn-loader" style="display:none;">⏳ Processing...</span>
+        </button>
+
+        <div id="resultsContainer" class="results-container" style="display:none;">
+          <h3 id="resultTitle"></h3>
+          <div id="tipsList"></div>
+        </div>
+      </section>
+
+      <section class="section card">
+        <h2>💬 E-Waste Assistant</h2>
+        <p class="section-description">
+          Ask me anything about e-waste disposal and recycling
+        </p>
+        
+        <div class="chat-container">
+          <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+              <div class="message-content">
+                Hello! I’m your e-waste management assistant 🌿 How can I help you today?
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-input-container">
+            <input type="text" id="chatInput" placeholder="Ask about e-waste disposal..." />
+            <button class="btn btn-icon" id="sendBtn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p style="font-weight:bold; font-size:1.1rem;">♻️ Made with care for our environment | Pragya Chauhan</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

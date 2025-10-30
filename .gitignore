@@ -1,0 +1,35 @@
+#Python & TensorFlow__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.lib
+*.h5
+*.keras
+
+#Environment & Dependencies
+venv/backend/venv/
+.env
+.env.*
+
+#IDE & System Files
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+#Model & Data Files
+ai-model/
+*.tflite
+*.pb
+*.ckpt
+*.weights
+
+#Site packages (auto-generated libraries)
+backend/venv/Lib/site-packages/
+
+#Misc
+*.zip
+*.tar
+*.gz
